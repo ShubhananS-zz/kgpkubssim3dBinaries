@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+SERVER_IP=$1
+SERVER_PORT=$2
+TEAM_NAME=$3
+AGENT_NUM=$4
+cd binaries
+./agent $SERVER_IP $SERVER_PORT $TEAM_NAME $AGENT_NUM &

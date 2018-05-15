@@ -1,0 +1,55 @@
+<sequence name="right_jump" refresh="true">
+    <motion name="ready" time="1">
+        <move id="raj1" degree="-90.0" speed="1.0"/>
+		<move id="raj2" degree="0.0"  speed="1.0"/>
+        <move id="laj1" degree="-90.0" speed="1.0"/>
+		<move id="laj2" degree="0.0"  speed="1.0"/>
+    </motion>
+    <motion name="go" time="30">
+        <move id="raj1" degree="-90.0" speed="1.0"/>
+		<move id="raj2" degree="0.0"  speed="1.0"/>
+        <move id="laj1" degree="-90.0" speed="1.0"/>
+		<move id="laj2" degree="0.0"  speed="1.0"/>
+		<move id="llj1" degree="-90.0" speed="1.0"/>
+		<move id="rlj1" degree="-90.0" speed="1.0"/>
+        <move id="llj2" degree="65.0" speed="1.0"/>
+        <move id="rlj2" degree="-65.0" speed="1.0"/>
+        <move id="llj6" degree="-65.0" speed="1.0"/>
+        <move id="rlj6" degree="65.0" speed="1.0"/>
+
+		<move id="llj3" degree="0.0" speed="1.0" start="30"/>
+        <move id="rlj3" degree="0.0" speed="1.0" start="30"/>
+        <move id="llj4" degree="0.0" speed="1.0" start="30"/>
+        <move id="rlj4" degree="0.0" speed="1.0" start="30"/>
+        <move id="llj5" degree="0.0" speed="1.0" start="30"/>
+        <move id="rlj5" degree="0.0" speed="1.0" start="30"/>
+
+	</motion>
+    <motion name="stop" time="70">
+        <move id="raj1" degree="-90.0" speed="1.0"/>
+		<move id="raj2" degree="0.0"  speed="1.0"/>
+        <move id="laj1" degree="-90.0" speed="1.0"/>
+		<move id="laj2" degree="00.0"  speed="1.0"/>
+
+        <move id="llj2" degree="45.0" speed="0.1"/>
+        <move id="rlj2" degree="-45.0" speed="0.1"/>
+    </motion>
+    <motion name="reset" time="10">
+        <move id="raj1" degree="-90.0" speed="0.25"/>
+		<move id="raj2" degree="1.0" speed="0.25"/>
+        <move id="laj1" degree="-90.0" speed="0.25"/>
+		<move id="laj2" degree="-1.0" speed="0.25"/>
+
+        <move id="llj2" degree="0.0" speed="0.2"/>
+        <move id="rlj2" degree="0.0" speed="0.2"/>
+        <move id="llj6" degree="0.0" speed="0.2"/>
+        <move id="rlj6" degree="0.0" speed="0.2"/>
+
+        <move id="llj3" degree="0.0" speed="0.2"/>
+        <move id="rlj3" degree="0.0" speed="0.2"/>
+        <move id="llj4" degree="0.0" speed="0.2"/>
+        <move id="rlj4" degree="0.0" speed="0.2"/>
+        <move id="llj5" degree="0.0" speed="0.2"/>
+        <move id="rlj5" degree="0.0" speed="0.2"/>
+    </motion>
+</sequence>

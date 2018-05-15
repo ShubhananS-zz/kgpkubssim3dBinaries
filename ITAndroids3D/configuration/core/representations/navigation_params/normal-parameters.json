@@ -1,0 +1,12 @@
+{
+ "max_v_forward" : 1.0 ,
+ "max_v_backward" : 0.2 ,
+ "max_vy" : 0.5 ,
+ "max_vpsi" : 8.72664625997165,
+ "close_distance_threshold" : 1.0 ,
+ "low_vpsi_factor" : 0.25 ,
+ "low_v_forward_factor" : 0.5,
+  "low_v_backward_factor" : 0.5,
+  "low_vy_factor" : 0.5,
+  "velocity_gain" : 1.0
+}

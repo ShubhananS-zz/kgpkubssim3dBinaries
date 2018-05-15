@@ -1,0 +1,453 @@
+digraph RoboCanes_Modules {
+DebugModule [style=filled, color="#bedcb3"]
+OppAnalyzer [style=filled, color="#bedcb3"]
+PassingStrategy [style=filled, color="#bedcb3"]
+CognitionConfigLoader [style=filled, color="#bedcb3"]
+SimSparkConnection [style=filled, color="#bedcb3"]
+Parser [style=filled, color="#bedcb3"]
+TeamComRecv [style=filled, color="#bedcb3"]
+TeamComDemux [style=filled, color="#bedcb3"]
+TeamComMux [style=filled, color="#bedcb3"]
+TeamComSend [style=filled, color="#bedcb3"]
+AccEvaluator [style=filled, color="#bedcb3"]
+TorsoAngleEstimator [style=filled, color="#bedcb3"]
+RobotModelProvider [style=filled, color="#bedcb3"]
+GroundContactDetector [style=filled, color="#bedcb3"]
+TorsoPoseProvider [style=filled, color="#bedcb3"]
+FallDetector [style=filled, color="#bedcb3"]
+PolarBallPerceptConverter [style=filled, color="#bedcb3"]
+AugmentedSelfLocator [style=filled, color="#bedcb3"]
+BallLocator [style=filled, color="#bedcb3"]
+NaiveAgentLocator [style=filled, color="#bedcb3"]
+BeliefShare [style=filled, color="#bedcb3"]
+BeliefCombinator [style=filled, color="#bedcb3"]
+BlockOpponent [style=filled, color="#bedcb3"]
+Formation [style=filled, color="#bedcb3"]
+BeforeKickOff [style=filled, color="#bedcb3"]
+KickOffOwn [style=filled, color="#bedcb3"]
+FreekickOpp [style=filled, color="#bedcb3"]
+GoalkickOpp [style=filled, color="#bedcb3"]
+GoalkickOwn [style=filled, color="#bedcb3"]
+CornerkickOwn [style=filled, color="#bedcb3"]
+Striker2 [style=filled, color="#bedcb3"]
+Supporter [style=filled, color="#bedcb3"]
+GoalieInterceptProvider [style=filled, color="#bedcb3"]
+GoalKeeper [style=filled, color="#bedcb3"]
+BehaviorCombinator [style=filled, color="#bedcb3"]
+FootSelector [style=filled, color="#bedcb3"]
+PathPlanning [style=filled, color="#bedcb3"]
+SkillMoveToPos [style=filled, color="#bedcb3"]
+SkillGetBall [style=filled, color="#bedcb3"]
+SkillKick [style=filled, color="#bedcb3"]
+SkillDribble [style=filled, color="#bedcb3"]
+SkillCombinator [style=filled, color="#bedcb3"]
+MotionSelector [style=filled, color="#bedcb3"]
+Hoap2WalkingEngine [style=filled, color="#bedcb3"]
+SpecialActions [style=filled, color="#bedcb3"]
+KickMotion [style=filled, color="#bedcb3"]
+DeadMotion [style=filled, color="#bedcb3"]
+SimpleHeadMotion [style=filled, color="#bedcb3"]
+MotionCombinator [style=filled, color="#bedcb3"]
+JointPDControl [style=filled, color="#bedcb3"]
+SimSparkSend [style=filled, color="#bedcb3"]
+FrameInfo -> OppAnalyzer
+Gamestate -> OppAnalyzer
+BallPos -> OppAnalyzer
+OtherRobots -> OppAnalyzer
+OppAnalyzer -> OppInfo
+OtherRobots -> PassingStrategy
+RobotPose -> PassingStrategy
+FieldDimensions -> PassingStrategy
+PassingStrategy -> PassingStrategyRep
+PlayerInfo -> CognitionConfigLoader
+CognitionConfigLoader -> FieldDimensions
+CognitionConfigLoader -> SkillKickParameters
+SimSparkConnection -> ServerMessage
+SimSparkConnection -> SimsparkInfo
+ServerMessage -> Parser
+Parser -> FrameInfo
+Parser -> PlayerInfo
+Parser -> Gamestate
+Parser -> SimSparkLinePercept
+Parser -> BallPerceptPolar
+Parser -> FlagPercept
+Parser -> GoalPercept
+Parser -> RobotPartPercept
+Parser -> SensorData
+Parser -> ForceData
+Parser -> FSRData
+Parser -> HearMessage
+Parser -> Groundtruth
+Parser -> JointData
+FieldDimensions -> TeamComRecv
+FrameInfo -> TeamComRecv
+PlayerInfo -> TeamComRecv
+HearMessage -> TeamComRecv
+TeamComRecv -> TeamComInfo
+TeamComRecv -> TeamComDataIn
+TeamComInfo -> TeamComDemux
+TeamComDataIn -> TeamComDemux
+TeamComDemux -> TC_BeliefShareIn
+TeamComInfo -> TeamComMux
+TC_BeliefShareOut -> TeamComMux
+TeamComMux -> TeamComDataOut
+FieldDimensions -> TeamComSend
+FrameInfo -> TeamComSend
+PlayerInfo -> TeamComSend
+RobotPose -> TeamComSend
+TeamComInfo -> TeamComSend
+TeamComDataOut -> TeamComSend
+TeamComSend -> SayMessage
+FrameInfo -> AccEvaluator
+SensorData -> AccEvaluator
+AccEvaluator -> Odometry
+FrameInfo -> TorsoAngleEstimator
+SensorData -> TorsoAngleEstimator
+TorsoAngleEstimator -> TorsoAngles
+TorsoAngleEstimator -> UprightVec
+JointData -> RobotModelProvider
+RobotModelProvider -> FKModel
+FSRData -> GroundContactDetector
+GroundContactDetector -> GroundContactState
+PlayerInfo -> TorsoPoseProvider
+TorsoAngles -> TorsoPoseProvider
+GroundContactState -> TorsoPoseProvider
+FKModel -> TorsoPoseProvider
+TorsoPoseProvider -> TorsoPose
+TorsoAngles -> FallDetector
+TorsoPose -> FallDetector
+FrameInfo -> FallDetector
+JointData -> FallDetector
+FallDetector -> FallState
+BallPerceptPolar -> PolarBallPerceptConverter
+FKModel -> PolarBallPerceptConverter
+TorsoPose -> PolarBallPerceptConverter
+PolarBallPerceptConverter -> BallPercept
+FieldDimensions -> AugmentedSelfLocator
+FlagPercept -> AugmentedSelfLocator
+GoalPercept -> AugmentedSelfLocator
+SimSparkLinePercept -> AugmentedSelfLocator
+UprightVec -> AugmentedSelfLocator
+Odometry -> AugmentedSelfLocator
+PlayerInfo -> AugmentedSelfLocator
+JointData -> AugmentedSelfLocator
+Groundtruth -> AugmentedSelfLocator
+AugmentedSelfLocator -> RobotPose
+AugmentedSelfLocator -> LocalRobotPose
+BallPerceptPolar -> BallLocator
+BallPercept -> BallLocator
+UprightVec -> BallLocator
+JointData -> BallLocator
+Odometry -> BallLocator
+FrameInfo -> BallLocator
+LocalRobotPose -> BallLocator
+Groundtruth -> BallLocator
+BallLocator -> LocalBallPos
+RobotPartPercept -> NaiveAgentLocator
+Odometry -> NaiveAgentLocator
+PlayerInfo -> NaiveAgentLocator
+JointData -> NaiveAgentLocator
+LocalRobotPose -> NaiveAgentLocator
+FrameInfo -> NaiveAgentLocator
+NaiveAgentLocator -> LocalOtherRobots
+FieldDimensions -> BeliefShare
+FrameInfo -> BeliefShare
+PlayerInfo -> BeliefShare
+Gamestate -> BeliefShare
+FallState -> BeliefShare
+LocalRobotPose -> BeliefShare
+LocalBallPos -> BeliefShare
+LocalOtherRobots -> BeliefShare
+TeamComInfo -> BeliefShare
+TC_BeliefShareIn -> BeliefShare
+BeliefShare -> TC_BeliefShareOut
+BeliefShare -> TeamRobotPose
+BeliefShare -> TeamBallPos
+BeliefShare -> TeamOtherRobots
+BeliefShare -> ReceivedBallPos
+LocalRobotPose -> BeliefCombinator
+LocalBallPos -> BeliefCombinator
+LocalOtherRobots -> BeliefCombinator
+TeamOtherRobots -> BeliefCombinator
+TeamRobotPose -> BeliefCombinator
+TeamBallPos -> BeliefCombinator
+BeliefCombinator -> BallPos
+BeliefCombinator -> OtherRobots
+FieldDimensions -> BlockOpponent
+RobotPose -> BlockOpponent
+BallPos -> BlockOpponent
+PlayerInfo -> BlockOpponent
+TeamRobotPose -> BlockOpponent
+TeamOtherRobots -> BlockOpponent
+OtherRobots -> BlockOpponent
+BlockOpponent -> BlockPosition
+FrameInfo -> Formation
+FieldDimensions -> Formation
+Gamestate -> Formation
+PlayerInfo -> Formation
+RobotPose -> Formation
+BallPos -> Formation
+LocalBallPos -> Formation
+OtherRobots -> Formation
+LocalOtherRobots -> Formation
+BlockPosition -> Formation
+ReceivedBallPos -> Formation
+Formation -> PlayerRole
+FallState -> BeforeKickOff
+FieldDimensions -> BeforeKickOff
+Gamestate -> BeforeKickOff
+PlayerInfo -> BeforeKickOff
+PlayerRole -> BeforeKickOff
+RobotPose -> BeforeKickOff
+BeforeKickOff -> BeforeKickOffOutput
+FieldDimensions -> KickOffOwn
+BallPos -> KickOffOwn
+RobotPose -> KickOffOwn
+FallState -> KickOffOwn
+PlayerRole -> KickOffOwn
+FrameInfo -> KickOffOwn
+Gamestate -> KickOffOwn
+KickOffOwn -> KickOffOwnOutput
+FieldDimensions -> FreekickOpp
+Gamestate -> FreekickOpp
+PlayerRole -> FreekickOpp
+BallPos -> FreekickOpp
+FallState -> FreekickOpp
+FreekickOpp -> FreekickOppOutput
+FieldDimensions -> GoalkickOpp
+Gamestate -> GoalkickOpp
+PlayerInfo -> GoalkickOpp
+PlayerRole -> GoalkickOpp
+RobotPose -> GoalkickOpp
+FallState -> GoalkickOpp
+GoalkickOpp -> GoalkickOppOutput
+FieldDimensions -> GoalkickOwn
+Gamestate -> GoalkickOwn
+BallPos -> GoalkickOwn
+PlayerRole -> GoalkickOwn
+RobotPose -> GoalkickOwn
+FallState -> GoalkickOwn
+GoalkickOwn -> GoalkickOwnOutput
+FieldDimensions -> CornerkickOwn
+Gamestate -> CornerkickOwn
+BallPos -> CornerkickOwn
+PlayerRole -> CornerkickOwn
+RobotPose -> CornerkickOwn
+FallState -> CornerkickOwn
+OtherRobots -> CornerkickOwn
+CornerkickOwn -> CornerkickOwnOutput
+PassingStrategyRep -> Striker2
+FieldDimensions -> Striker2
+Gamestate -> Striker2
+PlayerRole -> Striker2
+FrameInfo -> Striker2
+FallState -> Striker2
+RobotPose -> Striker2
+BallPos -> Striker2
+LocalOtherRobots -> Striker2
+OtherRobots -> Striker2
+OppInfo -> Striker2
+Striker2 -> StrikerOutput
+FrameInfo -> Supporter
+PlayerInfo -> Supporter
+Gamestate -> Supporter
+RobotPose -> Supporter
+FallState -> Supporter
+PlayerRole -> Supporter
+Supporter -> SupporterOutput
+BallPos -> GoalieInterceptProvider
+FrameInfo -> GoalieInterceptProvider
+RobotPose -> GoalieInterceptProvider
+BallPercept -> GoalieInterceptProvider
+Gamestate -> GoalieInterceptProvider
+FallState -> GoalieInterceptProvider
+FieldDimensions -> GoalieInterceptProvider
+GoalieInterceptProvider -> GoalieBallIntercept
+Gamestate -> GoalKeeper
+FieldDimensions -> GoalKeeper
+Groundtruth -> GoalKeeper
+PlayerInfo -> GoalKeeper
+PlayerRole -> GoalKeeper
+FallState -> GoalKeeper
+RobotPose -> GoalKeeper
+BallPos -> GoalKeeper
+FrameInfo -> GoalKeeper
+GoalieBallIntercept -> GoalKeeper
+GoalKeeper -> GoalieOutput
+GoalKeeper -> ArmMotionOutput
+BeforeKickOffOutput -> BehaviorCombinator
+KickOffOwnOutput -> BehaviorCombinator
+CornerkickOwnOutput -> BehaviorCombinator
+FreekickOppOutput -> BehaviorCombinator
+GoalkickOppOutput -> BehaviorCombinator
+GoalkickOwnOutput -> BehaviorCombinator
+GoalieOutput -> BehaviorCombinator
+StrikerOutput -> BehaviorCombinator
+SupporterOutput -> BehaviorCombinator
+BehaviorCombinator -> SkillRequest
+BehaviorCombinator -> BeamRequest
+RobotPose -> FootSelector
+BallPos -> FootSelector
+LocalOtherRobots -> FootSelector
+SkillRequest -> FootSelector
+FootSelector -> ActiveFoot
+SkillRequest -> PathPlanning
+SkillGetBallOutput -> PathPlanning
+SkillKickOutput -> PathPlanning
+SkillDribbleOutput -> PathPlanning
+Gamestate -> PathPlanning
+RobotPose -> PathPlanning
+BallPos -> PathPlanning
+OtherRobots -> PathPlanning
+FieldDimensions -> PathPlanning
+PlayerRole -> PathPlanning
+PathPlanning -> SafeWalkDirection
+RobotPose -> SkillMoveToPos
+ForceData -> SkillMoveToPos
+SafeWalkDirection -> SkillMoveToPos
+SkillMoveToPos -> SkillMoveToPosOutput
+SkillRequest -> SkillGetBall
+RobotPose -> SkillGetBall
+BallPos -> SkillGetBall
+ActiveFoot -> SkillGetBall
+SkillGetBall -> SkillGetBallOutput
+SkillRequest -> SkillKick
+FrameInfo -> SkillKick
+BallPercept -> SkillKick
+BallPos -> SkillKick
+LocalBallPos -> SkillKick
+RobotPose -> SkillKick
+ForceData -> SkillKick
+SkillKickParameters -> SkillKick
+SkillKick -> SkillKickOutput
+RobotPose -> SkillDribble
+OtherRobots -> SkillDribble
+BallPercept -> SkillDribble
+BallPos -> SkillDribble
+LocalBallPos -> SkillDribble
+ActiveFoot -> SkillDribble
+SkillRequest -> SkillDribble
+SkillDribble -> SkillDribbleOutput
+SkillRequest -> SkillCombinator
+SkillMoveToPosOutput -> SkillCombinator
+SkillGetBallOutput -> SkillCombinator
+SkillKickOutput -> SkillCombinator
+SkillDribbleOutput -> SkillCombinator
+SkillCombinator -> MotionRequest
+MotionRequest -> MotionSelector
+MotionSelector -> MotionSelection
+SpecialActionsOutput -> Hoap2WalkingEngine
+FrameInfo -> Hoap2WalkingEngine
+UprightVec -> Hoap2WalkingEngine
+Odometry -> Hoap2WalkingEngine
+MotionRequest -> Hoap2WalkingEngine
+Hoap2WalkingEngine -> WalkingEngineOutput
+FrameInfo -> SpecialActions
+PlayerInfo -> SpecialActions
+MotionRequest -> SpecialActions
+BeamRequest -> SpecialActions
+SimsparkInfo -> SpecialActions
+SpecialActions -> SpecialActionsOutput
+FrameInfo -> KickMotion
+MotionRequest -> KickMotion
+KickMotion -> KickMotionOutput
+JointData -> DeadMotion
+MotionRequest -> DeadMotion
+DeadMotion -> DeadMotionOutput
+FrameInfo -> SimpleHeadMotion
+BallPercept -> SimpleHeadMotion
+BallPos -> SimpleHeadMotion
+MotionRequest -> SimpleHeadMotion
+PlayerInfo -> SimpleHeadMotion
+SimpleHeadMotion -> HeadMotionRequest
+MotionSelection -> MotionCombinator
+SpecialActionsOutput -> MotionCombinator
+DeadMotionOutput -> MotionCombinator
+KickMotionOutput -> MotionCombinator
+WalkingEngineOutput -> MotionCombinator
+HeadMotionRequest -> MotionCombinator
+ArmMotionOutput -> MotionCombinator
+MotionCombinator -> JointRequest
+FrameInfo -> JointPDControl
+JointData -> JointPDControl
+JointRequest -> JointPDControl
+JointPDControl -> JointRequestWithSpeeds
+SimsparkInfo -> SimSparkSend
+JointRequestWithSpeeds -> SimSparkSend
+SayMessage -> SimSparkSend
+BeamRequest -> SimSparkSend
+FrameInfo [shape=box]
+Gamestate [shape=box]
+BallPos [shape=box]
+OtherRobots [shape=box]
+OppInfo [shape=box]
+RobotPose [shape=box]
+FieldDimensions [shape=box]
+PassingStrategyRep [shape=box]
+PlayerInfo [shape=box]
+SkillKickParameters [shape=box]
+ServerMessage [shape=box]
+SimsparkInfo [shape=box]
+SimSparkLinePercept [shape=box]
+BallPerceptPolar [shape=box]
+FlagPercept [shape=box]
+GoalPercept [shape=box]
+RobotPartPercept [shape=box]
+SensorData [shape=box]
+ForceData [shape=box]
+FSRData [shape=box]
+HearMessage [shape=box]
+Groundtruth [shape=box]
+JointData [shape=box]
+TeamComInfo [shape=box]
+TeamComDataIn [shape=box]
+TC_BeliefShareIn [shape=box]
+TC_BeliefShareOut [shape=box]
+TeamComDataOut [shape=box]
+SayMessage [shape=box]
+FallState [shape=box]
+UprightVec [shape=box]
+Odometry [shape=box]
+TorsoPose [shape=box]
+TorsoAngles [shape=box]
+FKModel [shape=box]
+GroundContactState [shape=box]
+BallPercept [shape=box]
+LocalRobotPose [shape=box]
+LocalBallPos [shape=box]
+LocalOtherRobots [shape=box]
+TeamRobotPose [shape=box]
+TeamBallPos [shape=box]
+TeamOtherRobots [shape=box]
+ReceivedBallPos [shape=box]
+BlockPosition [shape=box]
+PlayerRole [shape=box]
+BeforeKickOffOutput [shape=box]
+KickOffOwnOutput [shape=box]
+FreekickOppOutput [shape=box]
+GoalkickOppOutput [shape=box]
+GoalkickOwnOutput [shape=box]
+CornerkickOwnOutput [shape=box]
+StrikerOutput [shape=box]
+SupporterOutput [shape=box]
+GoalieBallIntercept [shape=box]
+GoalieOutput [shape=box]
+ArmMotionOutput [shape=box]
+SkillRequest [shape=box]
+BeamRequest [shape=box]
+ActiveFoot [shape=box]
+SkillGetBallOutput [shape=box]
+SkillKickOutput [shape=box]
+SkillDribbleOutput [shape=box]
+SafeWalkDirection [shape=box]
+SkillMoveToPosOutput [shape=box]
+MotionRequest [shape=box]
+MotionSelection [shape=box]
+SpecialActionsOutput [shape=box]
+WalkingEngineOutput [shape=box]
+KickMotionOutput [shape=box]
+DeadMotionOutput [shape=box]
+HeadMotionRequest [shape=box]
+JointRequest [shape=box]
+JointRequestWithSpeeds [shape=box]
+}

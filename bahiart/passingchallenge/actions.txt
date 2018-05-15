@@ -1,0 +1,20 @@
+
+AvailableActions = ["FrontWalkS", "FrontWalkF", "RotateAroundLeft", "RotateAroundRight", "Kick3mRight"];
+ActionsDescription =
+(
+//	(ActionName,		PreviousActions,	Preconditions,	Time, 	DeltaX,	DeltaY,	DeltaT,	DeltaBallX=0,	DeltaBallY=0),
+	("FrontWalkS",			[],					[],				1.00,	0.2,	0.0,	0.0,	0.0,			0.0),
+	("FrontWalkF",			["FrontWalkS", "FrontWalkF"],[],				0.50,	1.0,	0.0,	0.0),
+	("RotateAroundLeft",			[],					[],				0.20,	0.0,	0.0,	15.0),
+	("RotateAroundRight",		[],					[],				0.20,	0.0,	0.0,	-15.0),
+	("Kick3mRight",			[],					["HasTheBall"],
+															2.00,	0.0	,	0.0,	0.0,	3.0,			0.0)
+	//("KickKungFuRight",		[],					["HasTheBall"/*Todo preconditions*/],
+	//														0.5,	0.0,	0.0,	0.0,	0.0,			-2.5)
+);
+
+// if previousActions parameter is an empty list, all actions in ActionsAvailable are assumed.
+// the redefinition of an actionDescription for a given pair of actions overrides the previous one.
+// the existence of the actions described in ActionsDescription is not being checked 
+// the action "_root" is given by default to the first node of the planning node.
+// Available preconditions are: "AlignedWithBall", "HasTheBall", "AlignedWithTarget", "AlignedWithBallTarget"

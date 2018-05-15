@@ -1,0 +1,42 @@
+# Special Action STAND
+# 
+# The order of the joint angles is as follows:
+#    TEMP_JID_LEG_LEFT__HIP
+#    TEMP_JID_LEG_LEFT__THIGH_1
+#    TEMP_JID_LEG_LEFT__THIGH_2
+#    TEMP_JID_LEG_LEFT__KNEE  
+#    TEMP_JID_LEG_LEFT__FOOT_1
+#    TEMP_JID_LEG_LEFT__FOOT_2
+#    TEMP_JID_LEG_RIGHT__HIP
+#    TEMP_JID_LEG_RIGHT__THIGH_1
+#    TEMP_JID_LEG_RIGHT__THIGH_2
+#    TEMP_JID_LEG_RIGHT__KNEE
+#    TEMP_JID_LEG_RIGHT__FOOT_1
+#    TEMP_JID_LEG_RIGHT__FOOT_2
+#    TEMP_JID_ARM_LEFT__SHOULDER_1
+#    TEMP_JID_ARM_LEFT__SHOULDER_2
+#    TEMP_JID_ARM_LEFT__UPPERARM
+#    TEMP_JID_ARM_LEFT__ELBOW
+#    TEMP_JID_ARM_RIGHT__SHOULDER_1
+#    TEMP_JID_ARM_RIGHT__SHOULDER_2
+#    TEMP_JID_ARM_RIGHT__UPPERARM
+#    TEMP_JID_ARM_RIGHT__ELBOW
+# Values for the angles are interpreted as float
+#
+# Last value in a line is the time alloted to reach the state
+# Time can only be given as positive integer
+
+
+#LL0  LL1  LL2  LL3  LL4  LL5  LR0  LR1  LR2  LR3  LR4  LR5  LA0  LA1  LA2  LA3  RA0  RA1  RA2  RA3
+
+#  0    0   15  -37    23    0    0    0   15  -37   23    0    -90    0    0    4    -90    0    0    4  250
+#  0    0   16  -38    24    0    0    0   16  -38   24    0    -90    0    0    4    -90    0    0    4  500
+#  0    0   16  -38    24    0    0    0   16  -38   24    0    -90    0    0    4    -90    0    0    4  250	
+#  0    0   15  -37    23    0    0    0   15  -37   23    0    -90    0    0    4    -90    0    0    4  500
+
+  0    0   18  -42    26    0    0    0   18  -42   26    0    -90    0    0    4    -90    0    0    4  40
+  0    0   18  -42    26    0    0    0   18  -42   26    0    -90    0    0    4    -90    0    0    4  40
+  0    0   18  -42    26    0    0    0   18  -42   26    0    -90    0    0    4    -90    0    0    4  40
+  0    0   18  -42    26    0    0    0   18  -42   26    0    -90    0    0    4    -90    0    0    4  40
+
+ 

@@ -1,0 +1,69 @@
+###################################
+### ORIGINAL UT WALK PARAMETERS ###
+################################### 
+
+
+// Maximum size of steps in radians and millimeters 
+original_utwalk_max_step_size_angle	1.22
+original_utwalk_max_step_size_x	50
+original_utwalk_max_step_size_y	40
+// How much center of mass is shifted from side to side during walk in millimeters
+original_utwalk_shift_amount	20
+// Height of the torso from ground in millimeters
+original_utwalk_walk_height	175
+// Maximum height of foot from ground in millimeters during step
+original_utwalk_step_height	20
+// Fraction of a phase the swing foot remains still before moving in the X-Y plane
+original_utwalk_fraction_still	0.2
+// Fraction of a phase that the swing foot spends on the ground before lifting
+original_utwalk_fraction_on_ground	0.2
+// Fraction  of a phase that the swing foot spends moving in the X-Y plane
+original_utwalk_fraction_moving	0.6
+// Fraction of a phase that the swing foot spends in the air
+original_utwalk_fraction_in_air	0.6
+// Duration of single step in seconds
+original_utwalk_phase_length	0.38
+// Expected difference between commanded COM and sensed COM
+original_utwalk_default_com_pos_x	0.0
+// Factors of how fast the step sizes change per time cycle (proportional controller)
+original_utwalk_pid_step_size_x	0.03
+original_utwalk_pid_step_size_y	0.03
+original_utwalk_pid_step_size_rot	0.03
+// Maximum COM error in millimeters before the steps are slowed
+original_utwalk_max_normal_com_error	7.5
+// Maximum COM error in millimeters before all velocity reach 0
+original_utwalk_max_acceptable_com_error	12.5
+// Constant offset between the torso and feet in millimeters
+original_utwalk_fwd_offset	2.5
+// Factor of the step size applied to the forwards position of the torso
+original_utwalk_fwd_offset_factor	0.5
+// Angle of foot when it hits the ground in radians
+original_utwalk_swing_ankle_offset	-0.087266463
+// Proportional controller values for the torso angles coming from IMU measurements
+original_utwalk_pid_tilt	0.15
+original_utwalk_pid_roll	0.2
+// Proportional controller values for controlling the COM 
+original_utwalk_pid_com_x	1.0
+original_utwalk_pid_com_y	1.0
+original_utwalk_pid_com_z	0.0
+// Proportional controller values for moving arms to control COM
+original_utwalk_pid_arm_x	0.0
+original_utwalk_pid_arm_y	0.0
+
+#--Default parameters for walk balance control--#
+// Joint angle correction factors for body tilt and roll
+original_utwalk_balance_hip_pitch	0
+original_utwalk_balance_knee_pitch	0
+original_utwalk_balance_hip_roll		0
+original_utwalk_balance_ankle_roll	0
+
+#--Default parameters for toe models--#
+// Parameters for sinusoidal movement of toe and ankle pitch
+original_utwalk_toe_const_offset	  0
+original_utwalk_toe_amplitude	  0
+original_utwalk_toe_phase_offset	  0
+original_utwalk_ankle_const_offset	0
+original_utwalk_ankle_amplitude	  0
+original_utwalk_ankle_phase_offset	0
+
+

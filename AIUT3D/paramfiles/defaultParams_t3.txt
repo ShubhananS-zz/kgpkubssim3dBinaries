@@ -1,0 +1,750 @@
+### Default parameters loaded for all type 3 agents ###
+
+########################
+### GETUP PARAMETERS ###
+########################
+
+# default getup off front params
+getup_parms_stateDownInitialWait	0.5
+getup_parms_stateDown3A1	30.7764844017273
+getup_parms_stateDown3L3	119.3951092085372
+getup_parms_stateDown3MinTime	0.04
+getup_parms_stateDown5L1	-39.89410836656779
+getup_parms_stateDown5MinTime	0.9
+getup_parms_stateDown7L1	-19.1526346095759
+getup_parms_stateDown7L3	55.60616379393237
+getup_parms_stateDown7MinTime	0.3
+getup_parms_stateDown10MinTime	0.8
+
+# default getup off back params
+getup_parms_stateUpInitialWait	0.5
+getup_parms_stateUp3A1	-88.44879972730456
+getup_parms_stateUp3A2	1.2650751481354092
+getup_parms_stateUp3A4	15.318596218175323
+getup_parms_stateUp3L3	0.27072610408623543
+getup_parms_stateUp3MinTime	0.2
+getup_parms_stateUp5L3	126.53954277987913
+getup_parms_stateUp5MinTime	0.04
+getup_parms_stateUp7L1	-90.02522017910263
+getup_parms_stateUp7MinTime	0.2
+getup_parms_stateUp9A1	5.918237260643215
+getup_parms_stateUp9L1	-109.96698066442023
+getup_parms_stateUp9L4	-98.17300293001794
+getup_parms_stateUp9L5	-65.20666747068728
+getup_parms_stateUp9L6	-25.76640050991913
+getup_parms_stateUp9MinTime	0.2
+getup_parms_stateUp11A1	6.330268348632011
+getup_parms_stateUp11L1	-69.78058382649299
+getup_parms_stateUp11L5	-52.56153330503647
+getup_parms_stateUp11MinTime	0.4
+getup_parms_stateUp13A1	-115.9932393763986
+getup_parms_stateUp13L1	-0.31676877560308014
+getup_parms_stateUp13L3	35.079736274565654
+getup_parms_stateUp13L4	-38.191314685309145
+getup_parms_stateUp13L5	36.389822164512594
+getup_parms_stateUp13MinTime	0.04 
+getup_parms_stateUp15MinTime	0.6
+
+
+#######################
+### KICK PARAMETERS ###
+#######################
+
+kick_p1	-50.621274188520516
+kick_p2	-96.48124266563154
+kick_p3	-66.3674550430713
+kick_p4	132.6079562207066
+kick_p5	26.422265770856786
+kick_p6	57.154201046228906
+kick_p7	5.702358695662072
+kick_p8	7.877504867837286
+kick_p9	11.522796502849335
+kick_p11	-36.71509862086306
+kick_p12	20.61374682005677
+kick_p13	-10.876276156708883
+kick_p14	0.7449309633741266
+kick_xoffset	-0.2408393951668601
+kick_yoffset	-0.06798389074706206
+kick_scale1	11.670309819784594
+kick_scale2	1.9954055020031927
+kick_scale3	-7.5688666112202645
+
+
+#######################
+### KICK hh PARAMETERS ###
+#######################
+
+
+kick_hh_p1	0.22279
+kick_hh_p10	0.110204
+kick_hh_p100	0.686702
+kick_hh_p101	-0.116664
+kick_hh_p102	-12.3902
+kick_hh_p103	7.18496
+kick_hh_p104	-2.51344e-05
+kick_hh_p11	0.0725787
+kick_hh_p12	0.262272
+kick_hh_p13	0.00101892
+kick_hh_p14	-0.0962674
+kick_hh_p15	-0.112041
+kick_hh_p16	0.507836
+kick_hh_p17	0.0572698
+kick_hh_p18	0.713053
+kick_hh_p19	0.254141
+kick_hh_p2	-0.225193
+kick_hh_p20	-0.160295
+kick_hh_p21	0.0202385
+kick_hh_p22	-0.266343
+kick_hh_p23	0.351172
+kick_hh_p24	0.19343
+kick_hh_p25	0.0287917
+kick_hh_p26	0.0513212
+kick_hh_p27	-0.0449764
+kick_hh_p28	0.583606
+kick_hh_p29	0.250513
+kick_hh_p3	-0.756017
+kick_hh_p30	-0.0839372
+kick_hh_p31	0.0247216
+kick_hh_p32	-0.372402
+kick_hh_p33	0.505584
+kick_hh_p34	0.492407
+kick_hh_p35	22.8867
+kick_hh_p36	-25.8193
+kick_hh_p37	12.1881
+kick_hh_p38	0.100487
+kick_hh_p39	0.04975
+kick_hh_p4	-0.00504878
+kick_hh_p40	-1.45868
+kick_hh_p41	0.351821
+kick_hh_p42	-2.17804
+kick_hh_p43	-5.91937
+kick_hh_p44	2.42916
+kick_hh_p45	3.09574
+kick_hh_p46	-1.42125
+kick_hh_p47	-5.69961
+kick_hh_p48	-6.13693
+kick_hh_p49	-1.29195
+kick_hh_p5	-0.0348135
+kick_hh_p50	3.56992
+kick_hh_p51	0.398303
+kick_hh_p52	-0.00858545
+kick_hh_p53	0.0126812
+kick_hh_p54	-0.211976
+kick_hh_p55	-3.83562
+kick_hh_p56	-0.477829
+kick_hh_p57	-30.707
+kick_hh_p58	-0.332953
+kick_hh_p59	2.07507
+kick_hh_p6	-0.0879137
+kick_hh_p60	7.99578
+kick_hh_p61	-5.89839
+kick_hh_p62	-0.821314
+kick_hh_p63	1.4234
+kick_hh_p64	-0.10258
+kick_hh_p65	0.09794
+kick_hh_p66	-0.759421
+kick_hh_p67	4.61786
+kick_hh_p68	-37.2684
+kick_hh_p69	-64.1664
+kick_hh_p7	0.393223
+kick_hh_p70	-10.3192
+kick_hh_p71	12.0897
+kick_hh_p72	-0.954376
+kick_hh_p73	1.13091
+kick_hh_p74	29.6991
+kick_hh_p75	0.0725391
+kick_hh_p76	2.52781
+kick_hh_p77	7.16062
+kick_hh_p78	0.089191
+kick_hh_p79	-0.00556497
+kick_hh_p8	0.0450968
+kick_hh_p80	7.4223
+kick_hh_p81	-38.5748
+kick_hh_p82	10.9079
+kick_hh_p83	0.204246
+kick_hh_p84	0.0901417
+kick_hh_p85	-1.1111
+kick_hh_p86	1.04621
+kick_hh_p87	0.0268563
+kick_hh_p88	-0.105576
+kick_hh_p89	-8.71831
+kick_hh_p9	0.038103
+kick_hh_p90	7.40937
+kick_hh_p91	0.0507267
+kick_hh_p92	0.0921968
+kick_hh_p93	7.0033
+kick_hh_p94	-38.6705
+kick_hh_p95	10.7178
+kick_hh_p96	74.764
+kick_hh_p97	-0.182408
+kick_hh_p98	-0.86667
+kick_hh_p99	-0.993631
+kick_hh_xoffset	-0.209052
+kick_hh_yoffset	0.0266476
+kick_hh_scale1	11.670309819784594
+kick_hh_scale2	1.9954055020031927
+kick_hh_scale3	-7.5688666112202645
+
+
+#################################
+### FAST KICK 20M PARAMETERS ###
+#################################
+
+kick_twenty_p1	-0.706222
+kick_twenty_p10	-0.402258
+kick_twenty_p100	1.01779
+kick_twenty_p101	0.381517
+kick_twenty_p102	-12.0688
+kick_twenty_p103	7.47156
+kick_twenty_p11	0.141917
+kick_twenty_p12	0.8285
+kick_twenty_p14	0.366715
+kick_twenty_p15	-0.77628
+kick_twenty_p16	-1.67177
+kick_twenty_p17	0.716472
+kick_twenty_p18	1.03575
+kick_twenty_p19	-0.186559
+kick_twenty_p2	-0.432914
+kick_twenty_p20	-0.826768
+kick_twenty_p21	-0.40556
+kick_twenty_p22	-0.762675
+kick_twenty_p23	0.367558
+kick_twenty_p24	-0.501436
+kick_twenty_p25	-0.516902
+kick_twenty_p27	-0.46383
+kick_twenty_p28	0.70381
+kick_twenty_p29	0.364585
+kick_twenty_p3	-2.43259
+kick_twenty_p30	-0.974324
+kick_twenty_p31	-0.103114
+kick_twenty_p32	-0.906034
+kick_twenty_p33	-0.731035
+kick_twenty_p34	0.453126
+kick_twenty_p35	23.6751
+kick_twenty_p36	-25.1418
+kick_twenty_p37	10.9543
+kick_twenty_p38	-0.838904
+kick_twenty_p4	0.611012
+kick_twenty_p40	-0.644345
+kick_twenty_p41	-0.000879568
+kick_twenty_p42	-3.39637
+kick_twenty_p43	-5.28878
+kick_twenty_p44	2.04415
+kick_twenty_p45	3.65772
+kick_twenty_p46	-0.787888
+kick_twenty_p47	-5.36308
+kick_twenty_p48	-6.49436
+kick_twenty_p49	-2.79145
+kick_twenty_p5	-0.412073
+kick_twenty_p50	1.99642
+kick_twenty_p51	0.418705
+kick_twenty_p53	-1.36732
+kick_twenty_p54	0.32566
+kick_twenty_p55	-4.19307
+kick_twenty_p56	-1.92432
+kick_twenty_p57	-30.0156
+kick_twenty_p58	-1.52607
+kick_twenty_p59	2.20565
+kick_twenty_p6	0.348951
+kick_twenty_p60	7.34485
+kick_twenty_p61	-7.58384
+kick_twenty_p62	-1.97842
+kick_twenty_p63	0.200361
+kick_twenty_p64	-0.380149
+kick_twenty_p66	0.0823689
+kick_twenty_p67	5.21222
+kick_twenty_p68	-38.1771
+kick_twenty_p69	-64.781
+kick_twenty_p7	1.27049
+kick_twenty_p70	-11.866
+kick_twenty_p71	12.2249
+kick_twenty_p72	-0.387754
+kick_twenty_p73	1.14105
+kick_twenty_p74	29.9073
+kick_twenty_p75	1.06498
+kick_twenty_p76	2.98163
+kick_twenty_p77	5.88605
+kick_twenty_p79	0.687949
+kick_twenty_p8	-0.565849
+kick_twenty_p80	8.30331
+kick_twenty_p81	-40.028
+kick_twenty_p82	10.8179
+kick_twenty_p83	0.704211
+kick_twenty_p84	0.223928
+kick_twenty_p85	-1.38024
+kick_twenty_p86	1.56582
+kick_twenty_p87	-1.72358
+kick_twenty_p88	-0.0825304
+kick_twenty_p89	-9.86315
+kick_twenty_p9	0.192429
+kick_twenty_p90	7.29258
+kick_twenty_p92	0.360165
+kick_twenty_p93	5.94424
+kick_twenty_p94	-38.8789
+kick_twenty_p95	10.4092
+kick_twenty_p96	73.8074
+kick_twenty_p97	-1.10336
+kick_twenty_p98	-0.686209
+kick_twenty_p99	-0.429492
+kick_scale_twenty_p1	0.172823
+kick_scale_twenty_p10	-0.45172
+kick_scale_twenty_p11	1.22194
+kick_scale_twenty_p115	-0.870023
+kick_scale_twenty_p12	0.614493
+kick_scale_twenty_p13	-0.177688
+kick_scale_twenty_p14	0.793323
+kick_scale_twenty_p15	-0.0994845
+kick_scale_twenty_p16	0.550166
+kick_scale_twenty_p17	-0.26672
+kick_scale_twenty_p18	-0.709365
+kick_scale_twenty_p19	-0.187755
+kick_scale_twenty_p2	0.86921
+kick_scale_twenty_p20	-0.912778
+kick_scale_twenty_p21	1.68456
+kick_scale_twenty_p22	-0.0173128
+kick_scale_twenty_p23	0.31759
+kick_scale_twenty_p24	-0.294507
+kick_scale_twenty_p25	-0.119102
+kick_scale_twenty_p26	-1.26609
+kick_scale_twenty_p27	-1.03232
+kick_scale_twenty_p28	1.01075
+kick_scale_twenty_p29	-0.087288
+kick_scale_twenty_p3	-0.647849
+kick_scale_twenty_p30	0.949349
+kick_scale_twenty_p31	1.08534
+kick_scale_twenty_p32	0.582357
+kick_scale_twenty_p33	-0.265262
+kick_scale_twenty_p34	0.474083
+kick_scale_twenty_p35	-0.0987475
+kick_scale_twenty_p36	-0.759158
+kick_scale_twenty_p37	-1.95303
+kick_scale_twenty_p38	-0.282834
+kick_scale_twenty_p39	0.301401
+kick_scale_twenty_p4	0.396389
+kick_scale_twenty_p40	-0.163625
+kick_scale_twenty_p41	-0.309016
+kick_scale_twenty_p42	0.216659
+kick_scale_twenty_p43	0.317292
+kick_scale_twenty_p44	-0.5635
+kick_scale_twenty_p45	0.614862
+kick_scale_twenty_p46	0.774282
+kick_scale_twenty_p47	-0.547168
+kick_scale_twenty_p5	0.679125
+kick_scale_twenty_p6	0.155682
+kick_scale_twenty_p7	-0.713641
+kick_scale_twenty_p8	-1.07673
+kick_scale_twenty_p9	-0.251779
+kick_t_twenty_p104	0.0581225
+kick_t_twenty_p13	-0.0133789
+kick_t_twenty_p26	-0.0357525
+kick_t_twenty_p39	0.103682
+kick_t_twenty_p52	0.121052
+kick_t_twenty_p65	0.00800291
+kick_t_twenty_p78	0.0955472
+kick_t_twenty_p91	0.0800642
+kick_twenty_xoffset	-0.209052
+kick_twenty_yoffset	0.0266476
+
+#######################
+### kick_defence PARAMETERS ###
+#######################
+
+kick_defence_p1	-0.314113
+kick_defence_p10	0.615727
+kick_defence_p100	10.3399
+kick_defence_p101	0.911606
+kick_defence_p102	2.51382
+kick_defence_p103	0.0600953
+kick_defence_p104	-0.2
+kick_defence_p11	0.899536
+kick_defence_p12	-0.285761
+kick_defence_p13	0
+kick_defence_p14	0.0187955
+kick_defence_p15	0.060034
+kick_defence_p16	-0.197017
+kick_defence_p17	-0.144548
+kick_defence_p18	-0.442474
+kick_defence_p19	-0.0472425
+kick_defence_p2	-0.306599
+kick_defence_p20	-0.00488266
+kick_defence_p21	0.0455543
+kick_defence_p22	-0.384424
+kick_defence_p23	-0.243705
+kick_defence_p24	0.777845
+kick_defence_p25	0.148751
+kick_defence_p26	-0.1
+kick_defence_p27	-0.112504
+kick_defence_p28	0.345673
+kick_defence_p29	0.141686
+kick_defence_p3	0.626653
+kick_defence_p30	0.539649
+kick_defence_p31	0.237754
+kick_defence_p32	0.160271
+kick_defence_p33	0.315522
+kick_defence_p34	0.322356
+kick_defence_p35	22.5685
+kick_defence_p36	-25.7591
+kick_defence_p37	12.0843
+kick_defence_p38	1.14605
+kick_defence_p39	0.1
+kick_defence_p4	0.00858502
+kick_defence_p40	-2.13914
+kick_defence_p41	0.432114
+kick_defence_p42	-2.2087
+kick_defence_p43	-6.81278
+kick_defence_p44	2.95323
+kick_defence_p45	2.76693
+kick_defence_p46	-1.02604
+kick_defence_p47	-5.68437
+kick_defence_p48	-5.93532
+kick_defence_p49	-0.621642
+kick_defence_p5	0.0879942
+kick_defence_p50	3.1334
+kick_defence_p51	-0.390167
+kick_defence_p52	-0.01
+kick_defence_p53	0.28283
+kick_defence_p54	-0.0702003
+kick_defence_p55	-4.69336
+kick_defence_p56	-0.343903
+kick_defence_p57	-30.8399
+kick_defence_p58	-0.641197
+kick_defence_p59	2.32401
+kick_defence_p6	0.105384
+kick_defence_p60	8.09369
+kick_defence_p61	-6.10254
+kick_defence_p62	-0.0280448
+kick_defence_p63	1.54406
+kick_defence_p64	-0.0214054
+kick_defence_p65	-0.01
+kick_defence_p66	-1.09804
+kick_defence_p67	-44.9557
+kick_defence_p68	-43.9555
+kick_defence_p69	-81.4425
+kick_defence_p7	-0.270393
+kick_defence_p70	0.36573
+kick_defence_p71	17.5225
+kick_defence_p72	-1.00934
+kick_defence_p73	0.464771
+kick_defence_p74	29.7414
+kick_defence_p75	0.0916294
+kick_defence_p76	3.21817
+kick_defence_p77	6.41051
+kick_defence_p78	0.07
+kick_defence_p79	45.1327
+kick_defence_p8	0.470207
+kick_defence_p80	24.7345
+kick_defence_p81	-43.6491
+kick_defence_p82	-6.36501
+kick_defence_p83	-0.303025
+kick_defence_p84	-0.097155
+kick_defence_p85	-0.938895
+kick_defence_p86	1.53482
+kick_defence_p87	0.926186
+kick_defence_p88	-1.49333
+kick_defence_p89	-8.89237
+kick_defence_p9	0.11977
+kick_defence_p90	6.46837
+kick_defence_p91	-0.07
+kick_defence_p92	0.925382
+kick_defence_p93	-0.544566
+kick_defence_p94	-10.539
+kick_defence_p95	-0.363382
+kick_defence_p96	39.3018
+kick_defence_p97	0.685218
+kick_defence_p98	0.14823
+kick_defence_p99	0.0805562
+
+kick_defence_xoffset	-0.186623
+kick_defence_yoffset	-0.0257585
+
+#################################
+### OPTIMIZED WALK PARAMETERS ###
+#################################
+
+##<--Walk parameters for going to a target-->##
+/*
+These values are not UT Austin Villa's regular walking to target parameters,
+instead the team's parameters for positioning and dribbling are used as a 
+placeholder.  See the following paper for how these parameters were optimized: 
+---
+Design and Optimization of an Omnidirectional Humanoid Walk: A Winning Approach at the RoboCup 2011 3D Simulation Competition. 
+Patrick MacAlpine, Samuel Barrett, Daniel Urieli, Victor Vu, and Peter Stone.
+In Proceedings of the Twenty-Sixth AAAI Conference on Artificial Intelligence (AAAI), July 2012.
+---
+*/
+utwalk_max_step_size_angle	0.8813862859288328
+utwalk_max_step_size_x	107.3345416433581
+utwalk_max_step_size_y	50.16358799467425
+utwalk_shift_amount	-9.645515001040701
+utwalk_walk_height	147.687903533537
+utwalk_step_height	74.16613093090523
+utwalk_fraction_still	0.3530937822787453
+utwalk_fraction_on_ground	-0.09283692479214165
+utwalk_phase_length	0.062418067271895444
+utwalk_default_com_pos_x	-41.23365401620529
+utwalk_pid_step_size_x	0.016096422722122177
+utwalk_pid_step_size_y	0.056713579216171206
+utwalk_pid_step_size_rot	0.08683126580923822
+utwalk_max_normal_com_error	13.88734219175688
+utwalk_max_acceptable_com_error	97.61803550155396
+utwalk_fwd_offset	2.138608744683571
+utwalk_fwd_offset_factor	0.8920279682132857
+utwalk_fraction_moving	0.6833323202812207
+utwalk_fraction_in_air	1.2966717859105423
+utwalk_swing_ankle_offset	-0.011257119451918965
+utwalk_pid_tilt	0.1911495121542667
+utwalk_pid_roll	-0.32542799483520296
+utwalk_pid_com_x	1.3181352799362462
+utwalk_pid_com_y	0.6439683323811424
+utwalk_pid_com_z	0.10946655507451812
+utwalk_pid_arm_x	-0.04252457434628208
+utwalk_pid_arm_y	0.19398407014957578
+
+
+#################################
+### OPTIMIZATION WALK PARAMETERS ###
+#################################
+
+walked_p1	0
+walked_p2	0
+walked_p3	0
+walked_p4	0
+walked_p5	0
+walked_p6	0
+walked_p7	0
+walked_p8	0
+walked_p9	0
+walked_p10	0
+walked_p11	0
+walked_p12	0
+walked_p13	0
+walked_p14	0
+walked_p15	0
+walked_p16	0
+walked_p17	0
+walked_p18	0
+walked_p19	0
+walked_p20	0
+walked_p21	0
+walked_p22	0
+walked_p23	0
+walked_p24	0
+walked_p25	0
+walked_p26	0
+walked_p27	0
+walked_p28	0
+walked_p29	0
+walked_p30	0
+walked_p31	0
+walked_p32	0
+walked_p33	0
+walked_p34	0
+walked_p35	0
+walked_p36	0
+walked_p37	0
+
+
+##<--Walk parameters for positioning/dribbling-->##
+/*
+See the following paper for how these parameters were optimized: 
+---
+Design and Optimization of an Omnidirectional Humanoid Walk: A Winning Approach at the RoboCup 2011 3D Simulation Competition. 
+Patrick MacAlpine, Samuel Barrett, Daniel Urieli, Victor Vu, and Peter Stone.
+In Proceedings of the Twenty-Sixth AAAI Conference on Artificial Intelligence (AAAI), July 2012.
+---
+*/
+pos_utwalk_max_step_size_angle	0.8813862859288328
+pos_utwalk_max_step_size_x	107.3345416433581
+pos_utwalk_max_step_size_y	50.16358799467425
+pos_utwalk_shift_amount	-9.645515001040701
+pos_utwalk_walk_height	147.687903533537
+pos_utwalk_step_height	74.16613093090523
+pos_utwalk_fraction_still	0.3530937822787453
+pos_utwalk_fraction_on_ground	-0.09283692479214165
+pos_utwalk_phase_length	0.062418067271895444
+pos_utwalk_default_com_pos_x	-41.23365401620529
+pos_utwalk_pid_step_size_x	0.016096422722122177
+pos_utwalk_pid_step_size_y	0.056713579216171206
+pos_utwalk_pid_step_size_rot	0.08683126580923822
+pos_utwalk_max_normal_com_error	13.88734219175688
+pos_utwalk_max_acceptable_com_error	97.61803550155396
+pos_utwalk_fwd_offset	2.138608744683571
+pos_utwalk_fwd_offset_factor	0.8920279682132857
+pos_utwalk_fraction_moving	0.6833323202812207
+pos_utwalk_fraction_in_air	1.2966717859105423
+pos_utwalk_swing_ankle_offset	-0.011257119451918965
+pos_utwalk_pid_tilt	0.1911495121542667
+pos_utwalk_pid_roll	-0.32542799483520296
+pos_utwalk_pid_com_x	1.3181352799362462
+pos_utwalk_pid_com_y	0.6439683323811424
+pos_utwalk_pid_com_z	0.10946655507451812
+pos_utwalk_pid_arm_x	-0.04252457434628208
+pos_utwalk_pid_arm_y	0.19398407014957578
+
+##<--Walk parameters for approaching the ball to kick-->##
+/*
+See the following paper for how these parameters were optimized: 
+---
+UT Austin Villa: RoboCup 2014 3D Simulation League Competition and Technical Challenge Champions.
+Patrick MacAlpine, Mike Depinet, Jason Liang, and Peter Stone.
+In RoboCup-2014: Robot Soccer World Cup XVIII, Lecture Notes in Artificial Intelligence, Springer Verlag, Berlin, 2015.
+---
+*/
+app_utwalk_max_step_size_angle	1.5658540891438208
+app_utwalk_max_step_size_x	85.62354786632908
+app_utwalk_max_step_size_y	66.55493597447787
+app_utwalk_shift_amount	-25.717092988455377
+app_utwalk_walk_height	155.97699610626586
+app_utwalk_step_height	71.91317764128446
+app_utwalk_fraction_still	0.5921224357178227
+app_utwalk_fraction_on_ground	0.08241881050163216
+app_utwalk_phase_length	0.043490336499228746
+app_utwalk_default_com_pos_x	-58.004414037674955
+app_utwalk_pid_step_size_x	0.06898186727176964
+app_utwalk_pid_step_size_y	0.09350623780104678
+app_utwalk_pid_step_size_rot	0.09450837962573518
+app_utwalk_max_normal_com_error	31.260652541852693
+app_utwalk_max_acceptable_com_error	122.96900979391759
+app_utwalk_fwd_offset	2.230735167695816
+app_utwalk_fwd_offset_factor	0.9254865876701823
+app_utwalk_fraction_moving	0.8705953612631807
+app_utwalk_fraction_in_air	1.3892580307682738
+app_utwalk_swing_ankle_offset	0.08832347939917858
+app_utwalk_pid_tilt	0.3048680146143837
+app_utwalk_pid_roll	-0.3219664122442003
+app_utwalk_pid_com_x	1.435720452879604
+app_utwalk_pid_com_y	0.6129731132169935
+app_utwalk_pid_com_z	0.03352964983107902
+app_utwalk_pid_arm_x	-0.10375221628374033
+app_utwalk_pid_arm_y	0.23826286396901017
+
+
+// Parameters for approaching the ball
+kick_gen_approach_turnDist	0.40892318003760225
+kick_gen_approach_buff	0.02885478659767846
+kick_gen_approach_estVelCorrection	0.09694944837908366
+kick_gen_approach_navBallDist	0.5
+kick_gen_approach_navBallCollision	0.333
+//kick_gen_approach_navBallAngle	40.53921368439362
+kick_gen_approach_navBallAngle	20.0
+//kick_gen_approach_maxDecelX	0.6496963869244626
+kick_gen_approach_maxDecelX	1.0
+kick_gen_approach_maxDecelY	1.5491744047740306
+
+
+// Parameters for dribbling
+drib_coll_thresh				0.33582030312352373
+drib_target					0.17785682250297227
+
+
+
+##################################################
+############ kick_gnd parameters ################
+#################################################
+
+kick_gnd_p1	0.163677
+kick_gnd_p10	-0.0465833
+kick_gnd_p100	75.5428
+kick_gnd_p101	55.2234
+kick_gnd_p102	66.7687
+kick_gnd_p103	18.8497
+kick_gnd_p104	0.15
+kick_gnd_p11	0.613716
+kick_gnd_p12	-0.135689
+kick_gnd_p13	0
+kick_gnd_p14	0.056275
+kick_gnd_p15	-0.266511
+kick_gnd_p16	-0.214292
+kick_gnd_p17	0.259187
+kick_gnd_p18	-0.585138
+kick_gnd_p19	0.219603
+kick_gnd_p2	-0.402763
+kick_gnd_p20	0.392412
+kick_gnd_p21	0.0411352
+kick_gnd_p22	-0.0657532
+kick_gnd_p23	-0.386142
+kick_gnd_p24	0.937397
+kick_gnd_p25	-0.385613
+kick_gnd_p26	-0.1
+kick_gnd_p27	0.523103
+kick_gnd_p28	-0.334804
+kick_gnd_p29	0.173726
+kick_gnd_p3	0.928044
+kick_gnd_p30	-0.100629
+kick_gnd_p31	0.225688
+kick_gnd_p32	-0.469302
+kick_gnd_p33	0.0223065
+kick_gnd_p34	0.745858
+kick_gnd_p35	23.5259
+kick_gnd_p36	-26.1537
+kick_gnd_p37	11.9172
+kick_gnd_p38	1.02547
+kick_gnd_p39	0
+kick_gnd_p4	-0.289449
+kick_gnd_p40	-1.3182
+kick_gnd_p41	0.710329
+kick_gnd_p42	-2.08225
+kick_gnd_p43	-5.9179
+kick_gnd_p44	2.90961
+kick_gnd_p45	3.0467
+kick_gnd_p46	-0.773938
+kick_gnd_p47	-5.0592
+kick_gnd_p48	-5.89063
+kick_gnd_p49	-0.81568
+kick_gnd_p5	0.276619
+kick_gnd_p50	3.50269
+kick_gnd_p51	-0.29277
+kick_gnd_p52	-0.31
+kick_gnd_p53	0.297018
+kick_gnd_p54	-0.0114527
+kick_gnd_p55	-4.39251
+kick_gnd_p56	-0.1612
+kick_gnd_p57	-30.5786
+kick_gnd_p58	-0.317878
+kick_gnd_p59	1.94058
+kick_gnd_p6	0.0887207
+kick_gnd_p60	8.13659
+kick_gnd_p61	-6.08047
+kick_gnd_p62	0.11566
+kick_gnd_p63	2.23654
+kick_gnd_p64	0.0500418
+kick_gnd_p65	-0.01
+kick_gnd_p66	-1.2844
+kick_gnd_p67	4.34236
+kick_gnd_p68	-37.7129
+kick_gnd_p69	-64.7545
+kick_gnd_p7	0.231213
+kick_gnd_p70	-9.50097
+kick_gnd_p71	11.7216
+kick_gnd_p72	-0.318276
+kick_gnd_p73	0.721906
+kick_gnd_p74	29.6561
+kick_gnd_p75	0.145964
+kick_gnd_p76	3.57069
+kick_gnd_p77	7.30289
+kick_gnd_p78	0.09
+kick_gnd_p79	45.5303
+kick_gnd_p8	-0.134541
+kick_gnd_p80	6.98092
+kick_gnd_p81	-37.564
+kick_gnd_p82	10.9499
+kick_gnd_p83	-0.383668
+kick_gnd_p84	-0.291305
+kick_gnd_p85	-0.90427
+kick_gnd_p86	1.53419
+kick_gnd_p87	0.798961
+kick_gnd_p88	-0.606241
+kick_gnd_p89	-9.04715
+kick_gnd_p9	-0.122996
+kick_gnd_p90	6.55981
+kick_gnd_p91	-0.05
+kick_gnd_p92	-0.148511
+kick_gnd_p93	6.59058
+kick_gnd_p94	-64.1292
+kick_gnd_p95	-58.6764
+kick_gnd_p96	84.4296
+kick_gnd_p97	-24.1626
+kick_gnd_p98	-0.79815
+kick_gnd_p99	-8.37775
+kick_gnd_xoffset	-0.186623
+kick_gnd_yoffset	-0.0257585

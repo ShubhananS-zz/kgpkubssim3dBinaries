@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE joints [
+<!ENTITY head1  "0" >
+<!ENTITY head2  "1" >
+<!ENTITY lleg1  "2" >
+<!ENTITY rleg1  "3" >
+<!ENTITY lleg2  "4" >
+<!ENTITY rleg2  "5" >
+<!ENTITY lleg3  "6" >
+<!ENTITY rleg3  "7" >
+<!ENTITY lleg4  "8" >
+<!ENTITY rleg4  "9" >
+<!ENTITY lleg5  "10"    >
+<!ENTITY rleg5  "11"    >
+<!ENTITY lleg6  "12"    >
+<!ENTITY rleg6  "13"    >
+<!ENTITY larm1  "14"    >
+<!ENTITY rarm1  "15"    >
+<!ENTITY larm2  "16"    >
+<!ENTITY rarm2  "17"    >
+<!ENTITY larm3  "18"    >
+<!ENTITY rarm3  "19"    >
+<!ENTITY larm4  "20"    >
+<!ENTITY rarm4  "21"    >
+<!ENTITY amp0 "0"> 
+<!ENTITY amp1 "20"> 
+<!ENTITY amp2 "40"> 
+<!ENTITY amp3 "20"> 
+<!ENTITY amp4 "40"> 
+<!ENTITY period "5.7">
+]>
+
+<behavior name="GoalieHockeyStepRight" type="CPGBehavior" >
+
+    <patterns>
+        &lleg1;:  &amp1; &period; 0 -90;
+        &rleg1;:  -&amp1; &period; 0 -90;
+
+        &lleg2;: -&amp1; &period; 1.570796327 45;
+        &rleg2;:  &amp1; &period; 1.570796327 -45;
+
+        &lleg3;: -&amp4; &period; 0 100;
+        &rleg3;:  &amp4; &period; 0 100;
+
+        &lleg4;:  &amp2; &period; 0 -100;
+        &rleg4;: -&amp2; &period; 0 -100;
+
+        &lleg5;: -&amp1; &period; 0 -45;
+        &rleg5;:  &amp1; &period; 0 -45;
+
+        &lleg6;: -&amp1; &period; 0 -25;
+        &rleg6;:  &amp1; &period; 0 25;
+
+        &larm1;: -&amp3; &period; 1.570796327 20;
+        &rarm1;:  &amp3; &period; 1.570796327 20;
+
+        &larm2;: -&amp3; &period; 0  30;
+        &rarm2;: &amp3; &period; 0 -30;
+    </patterns>
+
+    <delta>&period;</delta>
+
+</behavior>

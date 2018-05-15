@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+SERVER_IP=$1
+SERVER_PORT=3100
+TEAM_NAME="ITAndroids"
+AGENT_NUM=1
+cd binaries
+./agent $SERVER_IP $SERVER_PORT $TEAM_NAME $AGENT_NUM &

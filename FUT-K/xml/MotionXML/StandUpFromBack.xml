@@ -1,0 +1,153 @@
+<!--
+	要素 sequence
+		name 		動作全体としての名前(なんでもよい)	string
+		refresh 	ファイルの再読み込みを行うか		bool
+			true 	ファイルの読み込みを行う
+			false 	ファイルの読み込みを行わない
+	
+	要素 motion
+		name		一つの動作の名前					string
+		time		動作終了タイム					int
+
+	要素 move
+		id			動かす箇所						string
+		degree		角度								double
+		※speed		速度								double
+		※start		動作開始タイム					int
+		※end		動作終了タイム					int
+		※type		動作の設定方法					int
+			0		現在の角度に依存する
+			1		現在の角度に依存しない
+
+	※がついている属性は、必ずしも記述する必要がない
+-->
+
+<sequence name="stand_up" refresh="true">
+	<motion name="init" time="20">
+		<move id="hj1" degree="0.0" speed="0.1"/>
+		<move id="hj2" degree="0.0" speed="0.1"/>
+
+		<move id="raj1" degree="-90.0" speed="0.1"/>
+		<move id="laj1" degree="-90.0" speed="0.1"/>
+		<move id="raj2" degree="0.0"   speed="0.1"/>
+		<move id="laj2" degree="0.0"   speed="0.1"/>
+		<move id="raj3" degree="90.0"  speed="0.1"/>
+		<move id="laj3" degree="-90.0" speed="0.1"/>
+		<move id="raj4" degree="0.0"   speed="0.1"/>
+		<move id="laj4" degree="0.0"   speed="0.1"/>
+
+		<move id="rlj1" degree="0.0" speed="0.2"/>
+		<move id="llj1" degree="0.0" speed="0.2"/>
+		<move id="rlj2" degree="0.0" speed="0.2"/>
+		<move id="llj2" degree="0.0" speed="0.2"/>
+		<move id="rlj3" degree="0.0" speed="0.2"/>
+		<move id="llj3" degree="0.0" speed="0.2"/>
+		<move id="rlj4" degree="0.0" speed="0.2"/>
+		<move id="llj4" degree="0.0" speed="0.2"/>
+		<move id="rlj5" degree="0.0" speed="0.2"/>
+		<move id="llj5" degree="0.0" speed="0.2"/>
+		<move id="rlj6" degree="0.0" speed="0.2"/>
+		<move id="llj6" degree="0.0" speed="0.2"/>
+	</motion>
+	<motion name="passiveness" time="8">
+		<move id="raj1" degree="-180.0" speed="0.05"/>
+		<move id="laj1" degree="-180.0" speed="0.05"/>
+		<move id="raj2" degree="-180.0" speed="0.05"/>
+		<move id="laj2" degree="180.0"  speed="0.05"/>
+		<move id="raj3" degree="-180.0" speed="0.05"/>
+		<move id="laj3" degree="180.0"  speed="0.05"/>
+	</motion>
+	<motion name="open_foot1" time="7">
+		<move id="raj1" degree="-180.0" speed="0.05"/>
+		<move id="laj1" degree="-180.0" speed="0.05"/>
+
+		<move id="rlj2" degree="-120.0" speed="0.05"/>
+		<move id="llj2" degree="120.0"  speed="0.05"/>
+		<move id="rlj3" degree="30.0"   speed="0.05"/>
+		<move id="llj3" degree="30.0"   speed="0.05"/>
+		<move id="rlj4" degree="-10.0"  speed="0.05"/>
+		<move id="llj4" degree="-10.0"  speed="0.05"/>
+		<move id="rlj5" degree="-30.0"  speed="0.05"/>
+		<move id="llj5" degree="-30.0"  speed="0.05"/>
+	</motion>
+	<motion name="open_foot2" time="8">
+		<move id="raj1" degree="-180.0" speed="0.05"/>
+		<move id="laj1" degree="-180.0" speed="0.05"/>
+
+		<move id="rlj1" degree="-60.0"  speed="0.05"/>
+		<move id="llj1" degree="-60.0"  speed="0.05"/>
+		<move id="rlj2" degree="-90.0"  speed="0.05"/>
+		<move id="llj2" degree="90.0"   speed="0.05"/>
+		<move id="rlj3" degree="120.0"  speed="0.05"/>
+		<move id="llj3" degree="120.0"  speed="0.05"/>
+		<move id="rlj4" degree="-90.0"  speed="0.05"/>
+		<move id="llj4" degree="-90.0"  speed="0.05"/>
+		<move id="rlj5" degree="-90.0"  speed="0.05"/>
+		<move id="llj5" degree="-90.0"  speed="0.05"/>
+	</motion>
+	<motion name="settle_body" time="30">
+		<move id="raj1" degree="40.0"   speed="0.05" />
+		<move id="laj1" degree="40.0"   speed="0.05"/>
+		<move id="raj2" degree="0.0"    speed="0.05" />
+		<move id="laj2" degree="0.0"    speed="0.05"/>
+		<move id="raj3" degree="90.0"   speed="0.05"/>
+		<move id="laj3" degree="-90.0"  speed="0.05"/>
+		
+		<move id="rlj1" degree="-90.0"  speed="0.07"/>
+		<move id="llj1" degree="-90.0"  speed="0.07"/>
+		<move id="rlj2" degree="45.0"   speed="0.07"/>
+		<move id="llj2" degree="-45.0"  speed="0.07"/>
+		<move id="rlj3" degree="100.0"  speed="0.07"/>
+		<move id="llj3" degree="100.0"  speed="0.07"/>
+		<move id="rlj4" degree="-90.0"  speed="0.07"/>
+		<move id="llj4" degree="-90.0"  speed="0.07"/>
+		<move id="rlj5" degree="-45.0"  speed="0.07"/>
+		<move id="llj5" degree="-45.0"  speed="0.07"/>
+	</motion>
+	<motion name="close_foot" time="5">
+		<move id="raj1" degree="-90.0" speed="0.5"/>
+		<move id="laj1" degree="-90.0" speed="0.5"/>
+		<move id="raj2" degree="0.0"   speed="0.5"/>
+		<move id="laj2" degree="0.0"   speed="0.5"/>
+		<move id="raj3" degree="90.0"  speed="0.5"/>
+		<move id="laj3" degree="-90.0" speed="0.5"/>
+		<move id="raj4" degree="0.0"   speed="0.5"/>
+		<move id="laj4" degree="0.0"   speed="0.5"/>
+
+		<move id="rlj1" degree="90.0"   speed="0.05"/>
+		<move id="llj1" degree="90.0"   speed="0.05"/>
+		<move id="rlj2" degree="120.0"  speed="0.05"/>
+		<move id="llj2" degree="-120.0" speed="0.05"/>
+		<move id="rlj3" degree="-120.0" speed="0.05"/>
+		<move id="llj3" degree="-120.0" speed="0.05"/>
+		<move id="rlj4" degree="90.0"   speed="0.05"/>
+		<move id="llj4" degree="90.0"   speed="0.05"/>
+		<move id="rlj5" degree="120.0"  speed="0.05"/>
+		<move id="llj5" degree="120.0"  speed="0.05"/>
+	</motion>
+	<motion name="set" time="20">
+		<move id="raj1" degree="-100.0" speed="0.5"/>
+		<move id="laj1" degree="-100.0" speed="0.5"/>
+		<move id="raj2" degree="-20.0"  speed="0.5"/>
+		<move id="laj2" degree="20.0"   speed="0.5"/>
+		<move id="raj3" degree="90.0"   speed="0.5"/>
+		<move id="laj3" degree="-90.0"  speed="0.5"/>
+		<move id="raj4" degree="0.0"    speed="0.5"/>
+		<move id="laj4" degree="0.0"    speed="0.5"/>
+
+		<move id="rlj1" degree="0.0"   speed="0.1"/>
+		<move id="llj1" degree="0.0"   speed="0.1"/>
+		<move id="rlj2" degree="0.0"   speed="0.1"/>
+		<move id="llj2" degree="0.0"   speed="0.1"/>
+		<move id="rlj3" degree="25.0"  speed="0.1"/>
+		<move id="llj3" degree="25.0"  speed="0.1"/>
+		<move id="rlj4" degree="-60.0" speed="0.1"/>
+		<move id="llj4" degree="-60.0" speed="0.1"/>
+		<move id="rlj5" degree="35.0"  speed="0.1"/>
+		<move id="llj5" degree="35.0"  speed="0.1"/>
+		<move id="rlj6" degree="0.0"   speed="0.1"/>
+		<move id="llj6" degree="0.0"   speed="0.1"/>
+		<move id="rlj7" degree="0.0"   speed="0.1"/>
+		<move id="llj7" degree="0.0"   speed="0.1"/>
+	</motion>
+</sequence>
