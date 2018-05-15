@@ -5,7 +5,7 @@ BINARY_DIR="."
 LIBS_DIR="./libs"
 NUM_PLAYERS=11
 
-team="KgpKubs"
+team="KgpKubs2017Japan"
 host="10.1.2.1"
 port=3100
 paramsfile=paramfiles/defaultParams.txt
@@ -117,7 +117,7 @@ done
 
 opt="${opt} --host=${host} --port ${port} --team ${team} ${paramsfile_args} --mhost=${mhost}"
 
-DIR="$( cd "$( dirname "$0" )" && pwd )" 
+DIR="$( cd "$( dirname "$0" )" && pwd )"
 cd $DIR
 
 for ((i=1;i<=$NUM_PLAYERS;i++)); do
@@ -157,5 +157,3 @@ for ((i=1;i<=$NUM_PLAYERS;i++)); do
     esac
     sleep 0.6
 done
-
-
